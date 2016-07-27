@@ -6,6 +6,7 @@ Features:
 - Support for other non-file form elements (text, checkbox, etc.)
 
 # Sample code
+```
 Uploader uploader = new Uploader()
   .registerMimeTypes(FileType.TEXT, "application/json", "application/csv", "application/xml") //specify which application mimetypes should be processed as plain text
   .upload(request); //process data from form element
@@ -21,3 +22,4 @@ for (Upload upload : uploader.getAll()) { //iterate through all form elements
 	
 	System.out.println(upload.getContent()); //field contents, either as String or byte[] for binary data.
 }
+```
